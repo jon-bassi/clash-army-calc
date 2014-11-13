@@ -5,17 +5,7 @@ import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-import units.Archer;
-import units.Balloon;
-import units.Barbarian;
-import units.Dragon;
-import units.Giant;
-import units.Goblin;
-import units.Healer;
-import units.Pekka;
-import units.Unit;
-import units.WallBreaker;
-import units.Wizard;
+import units.*;
 
 import java.awt.Component;
 import java.awt.GridLayout;
