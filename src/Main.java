@@ -23,8 +23,6 @@ public class Main extends JFrame
    private final int NUMBER_OF_ROWS = 12;
    private final int NUMBER_OF_COLUMNS = 5;
    
-   //private JLabel messageLabel;
-   
 
    static ArrayList<Component> rows=
          new ArrayList<Component>();
@@ -142,19 +140,10 @@ public class Main extends JFrame
       panel3.add(label3);
       rows.add(panel3);
       
-      //JLabel label3 = new JLabel("Housing Space");
-      //JPanel panel3 = new JPanel();
-      //panel3.add(label3);
-      //rows.add(panel3);
-      
       JLabel label4 = new JLabel("");
       JPanel panel4 = new JPanel();
       panel4.add(label4);
       rows.add(panel4);
-      
-      //Integer[] supply = {200,205,210,215,220,225,230,235,240};    // amount of housing available at all levels
-      //JComboBox<Integer> totSupply = new JComboBox<Integer>(supply);
-      //rows.add(totSupply);
       
    }
    
@@ -448,16 +437,6 @@ class CalcButtonListener implements ActionListener
          }
       }
       
-      /**
-       * returning 1 for some reason instead of the value that is actually there
-       * may need to use action listeners for these combo boxes
-       */
-      
-      // debug
-      //int test = 0;
-      //test = (int) ((JComboBox<String>) (MainPanel.rows.get(0).get(1))).getSelectedItem();
-      //System.out.println("Test:" + test);
-      
       // retrieves the levels of the units from the respective JComboBox components
        for (int i = 0; i < 10; i ++)
       {
@@ -479,17 +458,8 @@ class CalcButtonListener implements ActionListener
       int totCost = 0;
       for (Unit u : uList)
       {
-         //System.out.println("Unit Cost:" + u.getTotCost());
          totCost += u.getTotCost();
       }
-      
-      // debugging
-      //System.out.println(uLevel[0]);
-      //System.out.println(uLevel[2]);
-      //System.out.println(uLevel[9]);
-      //System.out.println(uAmount[0]);
-      //System.out.println(uAmount[2]);
-      //System.out.println(uAmount[9]);
       
       // update gui
       ((JLabel)((JPanel)Main.rows.get(8*5+4)).getComponent(0)).setText(Integer.toString(totCost));
