@@ -10,7 +10,9 @@ Army cost and size calculator for Clash of Clans
 ===============
 
 copyright 2014
+
 ===============
 created by Jonathan Bassi
+
 ===============
 contact on github
